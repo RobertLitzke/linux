@@ -1,15 +1,18 @@
 let g:lua_inspect_events = ''
 map <F2> :NERDTreeToggle<CR> 
 set guicursor+=a:blinkon0 " hard disable cursor blink; terminal needs to disable also
+set history=100
 filetype on
 filetype plugin on
 filetype indent on
 set showmatch
 set showcmd
+set showmode
 set number
 set incsearch					"start scrolling as search terms are typed
 set smartcase					"search for any case until mixed case entered
 set hlsearch					"highlight search results
+nmap <silent> ,p :set invpaste<CR>:set paste?<CR>
 
 "tab formatting
 set shiftwidth=4
